@@ -1,3 +1,65 @@
+# Frontend Mentor - QR code component solution
+
+## Overview 
+
+### Screenshot 
+![Screenshot](src/assets/images/Screenshot.png)
+
+
+### Links
+
+- Solution URL: [Github](https://github.com/FrontendMentorTutorial/QR-code-Fundemental-)
+- Live Site URL: [qr-component](https://6696c295d6b714000864aafa--qr-component-lojan.netlify.app)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vitejs.dev) - Development Environment
+- [Styled Components](https://mui.com/material-ui/) - Component Library,
+
+
+### What I learned
+
+Introduced with React JS and MUI for react. A transition journey from AngularJS
+
+- Learnt the fundementals of React + Vite
+- Deployment utilizing netlify
+
+### Continued development
+
+Resuming with the following and on the prolong journey. My milestone to improve on the UI/UX and crafting an authentic design to tailor my portfolio.
+
+Expected fields 
+- Flexbox
+- Screen Responsiveness
+- Creative alignments 
+
+
+### Useful resources
+
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+
+## Author
+- Linkedin - [@Lojan Jayakumar](https://www.linkedin.com/in/lojan-jayakumar/)
+- Frontend Mentor - [@Lojan_2003](https://www.frontendmentor.io/profile/Yikes23)
+- Instagram - [@Lojan2318](https://www.instagram.com/lojan2318)
+
+## Acknowledgments
+
+This Project was a rudimentary exploration with reactJS and deployment methods, therefore the application was solely managed for experimentation purposes.
+
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -29,64 +91,3 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-
-# Frontend Mentor - QR code component solution
-
-## Overview 
-
-### Screenshot 
-![Screenshot](src/assets/images/Screenshot.png)
-
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- [React](https://reactjs.org/) - JS library
-- [Vite](https://vitejs.dev) - Development Environment
-- [Styled Components](https://mui.com/material-ui/) - Component Library,
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Introduced with React JS and MUI for react. A transition journey from Angular 
-
-- Learnt the fundementals of React + Vite
-- Deployment using netlify
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
