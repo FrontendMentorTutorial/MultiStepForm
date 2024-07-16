@@ -1,5 +1,6 @@
 import './App.css'
 import {Card, CardActionArea, CardContent, CardMedia, Typography} from '../mui.component'
+import qrCodeImage from '../assets/images/image-qr-code.png';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
           <CardMedia
           component="img"
           style={{borderRadius: '5%'}}
-          image='/src/assets/images/image-qr-code.png'
+          image={qrCodeImage}
           />
         </CardActionArea> 
           <CardContent>
