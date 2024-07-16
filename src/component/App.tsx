@@ -15,7 +15,7 @@ function App() {
           <CardMedia
           component="img"
           style={{borderRadius: '5%'}}
-          image='src/assets/images/image-qr-code.png'
+          image='/src/assets/images/image-qr-code.png'
           />
         </CardActionArea> 
           <CardContent>
