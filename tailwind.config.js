@@ -1,11 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "node_modules/preline/dist/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'ubuntu': ['Ubuntu', 'sans-serif']
+      },
+      fontWeight: {
+        'regular': 400,
+        'medium': 500,
+        'bold': 700
+      }
+    },
     screens: {
       
       'xs': '375px',

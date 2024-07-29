@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Regular weight */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/src/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+}
+
+/* Bold weight */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/src/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 600; /* Bold weight */
+    font-style: normal;
+}
+
+/* Medium weight */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/src/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+
+@layer base{
+    body{
+        @apply font-ubuntu
+    }
+}
+
+.circle-list-item {
+    @apply w-8 h-8 text-[0.75rem] font-light flex items-center justify-center border border-gray-300 rounded-full
+    hover:bg-lime-200 hover:text-blue-500;
+  }
