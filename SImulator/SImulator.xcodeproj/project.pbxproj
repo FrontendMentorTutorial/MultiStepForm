@@ -1,0 +1,963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA6971A62C67ED9900F36802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6971A52C67ED9900F36802 /* AppDelegate.swift */; };
+		EA6971A82C67ED9900F36802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6971A72C67ED9900F36802 /* SceneDelegate.swift */; };
+		EA6971AB2C67ED9900F36802 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA6971AA2C67ED9900F36802 /* Base */; };
+		EA6971AE2C67ED9900F36802 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA6971AD2C67ED9900F36802 /* Base */; };
+		EA6971B72C67ED9900F36802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6971B62C67ED9900F36802 /* AppDelegate.swift */; };
+		EA6971BA2C67ED9900F36802 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA6971B92C67ED9900F36802 /* Base */; };
+		EA6971C12C67ED9900F36802 /* SImulator Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EA6971C02C67ED9900F36802 /* SImulator Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA6971CB2C67ED9900F36802 /* SImulator Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EA6971CA2C67ED9900F36802 /* SImulator Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA6971D12C67ED9900F36802 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA69718D2C67ED9800F36802 /* Base */; };
+		EA6971D22C67ED9900F36802 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA69718D2C67ED9800F36802 /* Base */; };
+		EA6971D32C67ED9900F36802 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA69718E2C67ED9800F36802 /* Icon.png */; };
+		EA6971D42C67ED9900F36802 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA69718E2C67ED9800F36802 /* Icon.png */; };
+		EA6971D52C67ED9900F36802 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EA69718F2C67ED9800F36802 /* Style.css */; };
+		EA6971D62C67ED9900F36802 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EA69718F2C67ED9800F36802 /* Style.css */; };
+		EA6971D72C67ED9900F36802 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EA6971902C67ED9800F36802 /* Script.js */; };
+		EA6971D82C67ED9900F36802 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EA6971902C67ED9800F36802 /* Script.js */; };
+		EA6971D92C67ED9900F36802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6971912C67ED9800F36802 /* ViewController.swift */; };
+		EA6971DA2C67ED9900F36802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6971912C67ED9800F36802 /* ViewController.swift */; };
+		EA6971DB2C67ED9900F36802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6971922C67ED9900F36802 /* Assets.xcassets */; };
+		EA6971DC2C67ED9900F36802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6971922C67ED9900F36802 /* Assets.xcassets */; };
+		EA6971DD2C67ED9900F36802 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6971942C67ED9900F36802 /* SafariWebExtensionHandler.swift */; };
+		EA6971DE2C67ED9900F36802 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6971942C67ED9900F36802 /* SafariWebExtensionHandler.swift */; };
+		EA6971DF2C67ED9900F36802 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = EA6971962C67ED9900F36802 /* _locales */; };
+		EA6971E02C67ED9900F36802 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = EA6971962C67ED9900F36802 /* _locales */; };
+		EA6971E12C67ED9900F36802 /* images in Resources */ = {isa = PBXBuildFile; fileRef = EA6971972C67ED9900F36802 /* images */; };
+		EA6971E22C67ED9900F36802 /* images in Resources */ = {isa = PBXBuildFile; fileRef = EA6971972C67ED9900F36802 /* images */; };
+		EA6971E32C67ED9900F36802 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6971982C67ED9900F36802 /* manifest.json */; };
+		EA6971E42C67ED9900F36802 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6971982C67ED9900F36802 /* manifest.json */; };
+		EA6971E52C67ED9900F36802 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EA6971992C67ED9900F36802 /* background.js */; };
+		EA6971E62C67ED9900F36802 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EA6971992C67ED9900F36802 /* background.js */; };
+		EA6971E72C67ED9900F36802 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EA69719A2C67ED9900F36802 /* content.js */; };
+		EA6971E82C67ED9900F36802 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EA69719A2C67ED9900F36802 /* content.js */; };
+		EA6971E92C67ED9900F36802 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = EA69719B2C67ED9900F36802 /* popup.html */; };
+		EA6971EA2C67ED9900F36802 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = EA69719B2C67ED9900F36802 /* popup.html */; };
+		EA6971EB2C67ED9900F36802 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = EA69719C2C67ED9900F36802 /* popup.css */; };
+		EA6971EC2C67ED9900F36802 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = EA69719C2C67ED9900F36802 /* popup.css */; };
+		EA6971ED2C67ED9900F36802 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = EA69719D2C67ED9900F36802 /* popup.js */; };
+		EA6971EE2C67ED9900F36802 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = EA69719D2C67ED9900F36802 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA6971C22C67ED9900F36802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA6971862C67ED9800F36802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA6971BF2C67ED9900F36802;
+			remoteInfo = "SImulator Extension (iOS)";
+		};
+		EA6971CC2C67ED9900F36802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA6971862C67ED9800F36802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA6971C92C67ED9900F36802;
+			remoteInfo = "SImulator Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA6971F42C67ED9900F36802 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA6971C12C67ED9900F36802 /* SImulator Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971FB2C67ED9900F36802 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA6971CB2C67ED9900F36802 /* SImulator Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA69718D2C67ED9800F36802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		EA69718E2C67ED9800F36802 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EA69718F2C67ED9800F36802 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		EA6971902C67ED9800F36802 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		EA6971912C67ED9800F36802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA6971922C67ED9900F36802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA6971942C67ED9900F36802 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		EA6971962C67ED9900F36802 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		EA6971972C67ED9900F36802 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		EA6971982C67ED9900F36802 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		EA6971992C67ED9900F36802 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		EA69719A2C67ED9900F36802 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		EA69719B2C67ED9900F36802 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		EA69719C2C67ED9900F36802 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		EA69719D2C67ED9900F36802 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		EA6971A22C67ED9900F36802 /* SImulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SImulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6971A52C67ED9900F36802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA6971A72C67ED9900F36802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA6971AA2C67ED9900F36802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA6971AD2C67ED9900F36802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA6971AF2C67ED9900F36802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6971B42C67ED9900F36802 /* SImulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SImulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6971B62C67ED9900F36802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA6971B92C67ED9900F36802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA6971BB2C67ED9900F36802 /* SImulator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SImulator.entitlements; sourceTree = "<group>"; };
+		EA6971C02C67ED9900F36802 /* SImulator Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SImulator Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6971C52C67ED9900F36802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6971CA2C67ED9900F36802 /* SImulator Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SImulator Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6971CF2C67ED9900F36802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6971D02C67ED9900F36802 /* SImulator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SImulator.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA69719F2C67ED9900F36802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971B12C67ED9900F36802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971BD2C67ED9900F36802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971C72C67ED9900F36802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA6971852C67ED9800F36802 = {
+			isa = PBXGroup;
+			children = (
+				EA69718A2C67ED9800F36802 /* Shared (App) */,
+				EA6971932C67ED9900F36802 /* Shared (Extension) */,
+				EA6971A42C67ED9900F36802 /* iOS (App) */,
+				EA6971B52C67ED9900F36802 /* macOS (App) */,
+				EA6971C42C67ED9900F36802 /* iOS (Extension) */,
+				EA6971CE2C67ED9900F36802 /* macOS (Extension) */,
+				EA6971A32C67ED9900F36802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA69718A2C67ED9800F36802 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971912C67ED9800F36802 /* ViewController.swift */,
+				EA6971922C67ED9900F36802 /* Assets.xcassets */,
+				EA69718B2C67ED9800F36802 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		EA69718B2C67ED9800F36802 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA69718C2C67ED9800F36802 /* Main.html */,
+				EA69718E2C67ED9800F36802 /* Icon.png */,
+				EA69718F2C67ED9800F36802 /* Style.css */,
+				EA6971902C67ED9800F36802 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA6971932C67ED9900F36802 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971942C67ED9900F36802 /* SafariWebExtensionHandler.swift */,
+				EA6971952C67ED9900F36802 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		EA6971952C67ED9900F36802 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971962C67ED9900F36802 /* _locales */,
+				EA6971972C67ED9900F36802 /* images */,
+				EA6971982C67ED9900F36802 /* manifest.json */,
+				EA6971992C67ED9900F36802 /* background.js */,
+				EA69719A2C67ED9900F36802 /* content.js */,
+				EA69719B2C67ED9900F36802 /* popup.html */,
+				EA69719C2C67ED9900F36802 /* popup.css */,
+				EA69719D2C67ED9900F36802 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA6971A32C67ED9900F36802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971A22C67ED9900F36802 /* SImulator.app */,
+				EA6971B42C67ED9900F36802 /* SImulator.app */,
+				EA6971C02C67ED9900F36802 /* SImulator Extension.appex */,
+				EA6971CA2C67ED9900F36802 /* SImulator Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA6971A42C67ED9900F36802 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971A52C67ED9900F36802 /* AppDelegate.swift */,
+				EA6971A72C67ED9900F36802 /* SceneDelegate.swift */,
+				EA6971A92C67ED9900F36802 /* LaunchScreen.storyboard */,
+				EA6971AC2C67ED9900F36802 /* Main.storyboard */,
+				EA6971AF2C67ED9900F36802 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		EA6971B52C67ED9900F36802 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971B62C67ED9900F36802 /* AppDelegate.swift */,
+				EA6971B82C67ED9900F36802 /* Main.storyboard */,
+				EA6971BB2C67ED9900F36802 /* SImulator.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		EA6971C42C67ED9900F36802 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971C52C67ED9900F36802 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		EA6971CE2C67ED9900F36802 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EA6971CF2C67ED9900F36802 /* Info.plist */,
+				EA6971D02C67ED9900F36802 /* SImulator.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA6971A12C67ED9900F36802 /* SImulator (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6971F52C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator (iOS)" */;
+			buildPhases = (
+				EA69719E2C67ED9900F36802 /* Sources */,
+				EA69719F2C67ED9900F36802 /* Frameworks */,
+				EA6971A02C67ED9900F36802 /* Resources */,
+				EA6971F42C67ED9900F36802 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6971C32C67ED9900F36802 /* PBXTargetDependency */,
+			);
+			name = "SImulator (iOS)";
+			productName = "SImulator (iOS)";
+			productReference = EA6971A22C67ED9900F36802 /* SImulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA6971B32C67ED9900F36802 /* SImulator (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6971FC2C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator (macOS)" */;
+			buildPhases = (
+				EA6971B02C67ED9900F36802 /* Sources */,
+				EA6971B12C67ED9900F36802 /* Frameworks */,
+				EA6971B22C67ED9900F36802 /* Resources */,
+				EA6971FB2C67ED9900F36802 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6971CD2C67ED9900F36802 /* PBXTargetDependency */,
+			);
+			name = "SImulator (macOS)";
+			productName = "SImulator (macOS)";
+			productReference = EA6971B42C67ED9900F36802 /* SImulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA6971BF2C67ED9900F36802 /* SImulator Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6971F12C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator Extension (iOS)" */;
+			buildPhases = (
+				EA6971BC2C67ED9900F36802 /* Sources */,
+				EA6971BD2C67ED9900F36802 /* Frameworks */,
+				EA6971BE2C67ED9900F36802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SImulator Extension (iOS)";
+			productName = "SImulator Extension (iOS)";
+			productReference = EA6971C02C67ED9900F36802 /* SImulator Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EA6971C92C67ED9900F36802 /* SImulator Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6971F82C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator Extension (macOS)" */;
+			buildPhases = (
+				EA6971C62C67ED9900F36802 /* Sources */,
+				EA6971C72C67ED9900F36802 /* Frameworks */,
+				EA6971C82C67ED9900F36802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SImulator Extension (macOS)";
+			productName = "SImulator Extension (macOS)";
+			productReference = EA6971CA2C67ED9900F36802 /* SImulator Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA6971862C67ED9800F36802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EA6971A12C67ED9900F36802 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EA6971B32C67ED9900F36802 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EA6971BF2C67ED9900F36802 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EA6971C92C67ED9900F36802 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = EA6971892C67ED9800F36802 /* Build configuration list for PBXProject "SImulator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA6971852C67ED9800F36802;
+			productRefGroup = EA6971A32C67ED9900F36802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA6971A12C67ED9900F36802 /* SImulator (iOS) */,
+				EA6971B32C67ED9900F36802 /* SImulator (macOS) */,
+				EA6971BF2C67ED9900F36802 /* SImulator Extension (iOS) */,
+				EA6971C92C67ED9900F36802 /* SImulator Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA6971A02C67ED9900F36802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971D32C67ED9900F36802 /* Icon.png in Resources */,
+				EA6971AB2C67ED9900F36802 /* Base in Resources */,
+				EA6971D12C67ED9900F36802 /* Base in Resources */,
+				EA6971D72C67ED9900F36802 /* Script.js in Resources */,
+				EA6971DB2C67ED9900F36802 /* Assets.xcassets in Resources */,
+				EA6971AE2C67ED9900F36802 /* Base in Resources */,
+				EA6971D52C67ED9900F36802 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971B22C67ED9900F36802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971D42C67ED9900F36802 /* Icon.png in Resources */,
+				EA6971D62C67ED9900F36802 /* Style.css in Resources */,
+				EA6971BA2C67ED9900F36802 /* Base in Resources */,
+				EA6971D82C67ED9900F36802 /* Script.js in Resources */,
+				EA6971DC2C67ED9900F36802 /* Assets.xcassets in Resources */,
+				EA6971D22C67ED9900F36802 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971BE2C67ED9900F36802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971E52C67ED9900F36802 /* background.js in Resources */,
+				EA6971EB2C67ED9900F36802 /* popup.css in Resources */,
+				EA6971E92C67ED9900F36802 /* popup.html in Resources */,
+				EA6971E12C67ED9900F36802 /* images in Resources */,
+				EA6971E32C67ED9900F36802 /* manifest.json in Resources */,
+				EA6971DF2C67ED9900F36802 /* _locales in Resources */,
+				EA6971E72C67ED9900F36802 /* content.js in Resources */,
+				EA6971ED2C67ED9900F36802 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971C82C67ED9900F36802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971E62C67ED9900F36802 /* background.js in Resources */,
+				EA6971EC2C67ED9900F36802 /* popup.css in Resources */,
+				EA6971EA2C67ED9900F36802 /* popup.html in Resources */,
+				EA6971E22C67ED9900F36802 /* images in Resources */,
+				EA6971E42C67ED9900F36802 /* manifest.json in Resources */,
+				EA6971E02C67ED9900F36802 /* _locales in Resources */,
+				EA6971E82C67ED9900F36802 /* content.js in Resources */,
+				EA6971EE2C67ED9900F36802 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA69719E2C67ED9900F36802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971D92C67ED9900F36802 /* ViewController.swift in Sources */,
+				EA6971A62C67ED9900F36802 /* AppDelegate.swift in Sources */,
+				EA6971A82C67ED9900F36802 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971B02C67ED9900F36802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971DA2C67ED9900F36802 /* ViewController.swift in Sources */,
+				EA6971B72C67ED9900F36802 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971BC2C67ED9900F36802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971DD2C67ED9900F36802 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6971C62C67ED9900F36802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6971DE2C67ED9900F36802 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA6971C32C67ED9900F36802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA6971BF2C67ED9900F36802 /* SImulator Extension (iOS) */;
+			targetProxy = EA6971C22C67ED9900F36802 /* PBXContainerItemProxy */;
+		};
+		EA6971CD2C67ED9900F36802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA6971C92C67ED9900F36802 /* SImulator Extension (macOS) */;
+			targetProxy = EA6971CC2C67ED9900F36802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA69718C2C67ED9800F36802 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA69718D2C67ED9800F36802 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		EA6971A92C67ED9900F36802 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6971AA2C67ED9900F36802 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA6971AC2C67ED9900F36802 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6971AD2C67ED9900F36802 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA6971B82C67ED9900F36802 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6971B92C67ED9900F36802 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA6971EF2C67ED9900F36802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA6971F02C67ED9900F36802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EA6971F22C67ED9900F36802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SImulator Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator.Extension";
+				PRODUCT_NAME = "SImulator Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA6971F32C67ED9900F36802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SImulator Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator.Extension";
+				PRODUCT_NAME = "SImulator Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA6971F62C67ED9900F36802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SImulator;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator";
+				PRODUCT_NAME = SImulator;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA6971F72C67ED9900F36802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SImulator;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator";
+				PRODUCT_NAME = SImulator;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA6971F92C67ED9900F36802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SImulator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SImulator Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator.Extension";
+				PRODUCT_NAME = "SImulator Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA6971FA2C67ED9900F36802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SImulator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SImulator Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator.Extension";
+				PRODUCT_NAME = "SImulator Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA6971FD2C67ED9900F36802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/SImulator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SImulator;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator";
+				PRODUCT_NAME = SImulator;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA6971FE2C67ED9900F36802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/SImulator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SImulator;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safari-Personal.SImulator";
+				PRODUCT_NAME = SImulator;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA6971892C67ED9800F36802 /* Build configuration list for PBXProject "SImulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6971EF2C67ED9900F36802 /* Debug */,
+				EA6971F02C67ED9900F36802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6971F12C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6971F22C67ED9900F36802 /* Debug */,
+				EA6971F32C67ED9900F36802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6971F52C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6971F62C67ED9900F36802 /* Debug */,
+				EA6971F72C67ED9900F36802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6971F82C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6971F92C67ED9900F36802 /* Debug */,
+				EA6971FA2C67ED9900F36802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6971FC2C67ED9900F36802 /* Build configuration list for PBXNativeTarget "SImulator (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6971FD2C67ED9900F36802 /* Debug */,
+				EA6971FE2C67ED9900F36802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA6971862C67ED9800F36802 /* Project object */;
+}
