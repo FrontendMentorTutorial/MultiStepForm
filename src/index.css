@@ -36,3 +36,8 @@
     @apply w-8 h-8 text-[0.75rem] font-light flex items-center justify-center border border-white rounded-full
     hover:bg-lime-200 hover:text-blue-500;
   }
+
+.circle-list-item-selected {
+    @apply w-8 h-8 text-[0.75rem] font-light flex items-center justify-center border border-white rounded-full
+    bg-lime-200 text-blue-500;
+}
