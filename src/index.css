@@ -41,3 +41,11 @@
     @apply w-8 h-8 text-[0.75rem] font-light flex items-center justify-center border border-white rounded-full
     bg-lime-200 text-blue-500;
 }
+
+.form-header {
+    @apply font-bold text-2xl;
+}
+
+.form-header-p{
+    @apply font-thin text-neutral-400 text-xs my-2;
+}

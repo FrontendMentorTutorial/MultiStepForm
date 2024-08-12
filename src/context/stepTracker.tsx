@@ -5,10 +5,11 @@ interface TrackerInterface {
     updateTracker: (value: number) => void;
 }
 
-const TrackerContext = createContext<TrackerInterface>({
+export const TrackerContext = createContext<TrackerInterface>({
     tracking: 1,
     updateTracker: () => {}, // Default to a no-op function
 });
+
 
 export const TrackerProvider: React.FC<{ children: ReactNode}> = ({children}) =>{
     const [tracking, setTrackerValue] = useState<number>(1);

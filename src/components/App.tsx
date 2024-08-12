@@ -5,6 +5,7 @@ import StepperButton from './Stepper/StepperButton';
 import StepperSubmit from './Stepper/StepperSubmit';
 import Form from './Form';
 import { TrackerProvider } from '../context/stepTracker';
+import { FormProvider } from '../context/FormData';
 
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
           <section className='flex-shrink-0 h-full'>
               <NavBar/>
           </section>
-          <section className='flex-grow flex h-full'>
-              <Form></Form>
+          <section className='flex-grow m-5 sm:m-14 h-4/5 w-full'>
+            <FormProvider>
+              <Form/>
+            </FormProvider>
           </section>
           </div>
           <footer className='sm:hidden absolute bottom-0 h-20 bg-white w-full'>

@@ -33,7 +33,7 @@ const StepButton: React.FC = () => {
         case tracking < 4:
             return (
                 <div className="flex ml-auto">
-                    <button type="button" className="flex justify-center items-center align-middle rounded px-4 m-5 bg-blue-900 text-white" onClick={handleNextStep}>
+                    <button type="button" className="flex justify-center items-center align-middle rounded px-6 m-5 bg-blue-900 text-white" onClick={handleNextStep}>
                         Next Step
                     </button>
                 </div>
@@ -42,7 +42,7 @@ const StepButton: React.FC = () => {
         case tracking == 4: 
             return (
                 <div className="flex ml-auto">
-                    <button type="button" className="flex justify-center items-center align-middle rounded px-4 m-5 bg-blue-900 text-white" onClick={handleNextStep}>
+                    <button type="button" className="flex justify-center items-center align-middle rounded px-6 m-5 bg-indigo-500 text-white" onClick={handleNextStep}>
                         Confirm
                     </button>
                 </div>
