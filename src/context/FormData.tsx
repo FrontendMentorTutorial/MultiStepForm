@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode, useContext, useState } from 'react';
-import TrackerContext from './stepTracker';
+import TrackerContext from './StepTracker';
 
 interface FormInterface {
     updateInfo: (name: string, email: string, phone: string) => void;

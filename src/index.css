@@ -49,3 +49,12 @@
 .form-header-p{
     @apply font-thin text-neutral-400 text-xs my-2;
 }
+
+.plan-card{
+    @apply flex xs:w-full sm:w-32 p-3 sm:flex-col border rounded-lg 
+}
+
+.plan-card:hover{
+    @apply outline-indigo-700 border-indigo-700 bg-indigo-50 bg-opacity-40
+}
+

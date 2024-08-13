@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import TrackerContext from "../../context/stepTracker";
+import TrackerContext from "../../context/StepTracker";
 
 const StepperSubmit: React.FC = () => {
     const { tracking, updateTracker } = useContext(TrackerContext);
@@ -10,7 +10,7 @@ const StepperSubmit: React.FC = () => {
     };
 
     return (
-        <div className="flex align-middle h-full text-xs mx-5 mr-auto">
+        <div className="flex align-middle h-full sm:w-full text-xs sm:mx-0 mx-5">
             {tracking !== 1 && tracking <= 4 && (
                 <button type="button" className="text-gray-400" onClick={handleGoBack}>
                     <span>Go Back</span>
@@ -32,8 +32,8 @@ const StepButton: React.FC = () => {
     switch (true) {
         case tracking < 4:
             return (
-                <div className="flex ml-auto">
-                    <button type="button" className="flex justify-center items-center align-middle rounded px-6 m-5 bg-blue-900 text-white" onClick={handleNextStep}>
+                <div className="flex ml-auto m-5 mr-0">
+                    <button type="button" className="flex justify-center items-center align-middle rounded px-6  bg-blue-900 text-white" onClick={handleNextStep}>
                         Next Step
                     </button>
                 </div>
