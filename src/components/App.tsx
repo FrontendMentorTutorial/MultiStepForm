@@ -18,11 +18,11 @@ function App() {
               <StepperButton></StepperButton>
             </section>
           </div>
-          <div className="sm:relative flex absolute bg-white border my-20 rounded-xl shadow-sm w-11/12 md:max-w-[825px] sm:max-w-2xl sm:w-full sm:h-3/4">
+          <div className="sm:relative flex absolute bg-white border my-20 rounded-xl shadow-sm w-11/12 md:max-w-[825px]  sm:max-w-2xl sm:w-full ">
             <section className='flex-shrink-0 h-full'>
                 <NavBar/>
             </section>
-            <section className='flex-grow m-5 sm:m-14 h-4/5 w-full'>
+            <section className='flex-grow m-5 sm:m-14 sm:mb-0 w-full'>
               <FormProvider>
                 <Form/>
               </FormProvider>

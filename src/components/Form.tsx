@@ -13,12 +13,17 @@ function Form(){
     const {tracking} = useContext(TrackerContext);
     const {updateInfo, updatePlan, updateAdds} = useContext(FormContext)
 
+    const [isYearly, setIsYearly] = useState(false);
+    const handlePeriodChange = (value:boolean) => {
+        setIsYearly(value);
+    };
+
     switch (true) {
         case tracking === 1:
             return <Info/>
     
         case tracking === 2: 
-            return <Plan/>
+            return <Plan handlePeriodChange={handlePeriodChange} isYear={isYearly}/>
         
         case tracking === 3:
             return <Adds/>
@@ -30,7 +35,7 @@ function Form(){
 }
 const Info = () => {
     return (
-        <div className="flex flex-col w-full items-start xs:items-center sm:items-start">
+        <div className="flex flex-col w-full h-full items-start xs:items-center sm:items-start">
             <header>
                 <h1 className="form-header">Personal Info</h1>
                 <p className="form-header-p">Please provide your name, email address, and phone number.</p>
@@ -66,15 +71,18 @@ const Info = () => {
                         </div>
                     </div>  
                 </section>
-            <Footer/>
             </main>
+            <div className="w-full h-full hidden sm:flex flex-col-reverse">
+                <Footer/>
+            </div>
         </div>
     );
 };
 
-const Plan = () => {
+const Plan: React.FC<{ handlePeriodChange: (isYearly: boolean) => void, isYear: boolean }> = ({ handlePeriodChange, isYear })=> {
+    
     return (
-        <div className="flex flex-col w-full items-start xs:items-center sm:items-start">
+        <div className="flex flex-col w-full h-full items-start xs:items-center sm:items-start">
             <header>
                 <h1 className="form-header">Select your plan</h1>
                 <p className="form-header-p">You have an option of monthly or yearly billing.</p>
@@ -109,47 +117,126 @@ const Plan = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-blue-50 bg-opacity-50 mt-10 flex items-center justify-center h-10">
-                    <label className="relative inline-flex cursor-pointer items-center">
-                        <input id="switch" type="checkbox" className="peer sr-only" />
-                        <label className="hidden"></label>
-                        <div className="peer h-6 w-11 rounded-full border bg-slate-200 after:absolute after:left-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-slate-800 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-green-300"></div>
-                    </label>
-                </section>
-            <Footer/> 
+                <Period onPeriodChange={handlePeriodChange} isYear={isYear}/>
             </main>
+            <div className="w-full h-full hidden sm:flex flex-col-reverse">
+                <Footer/>
+            </div>
         </div>
     );
 }
 
 const Adds = () => {
     return (
-        <div>
+        <div className="flex flex-col w-full h-full items-start xs:items-center sm:items-start">
             <header>
                 <h1 className="form-header">Pick adds-on</h1>
                 <p className="form-header-p">Adds-ons help enhance your gaming experience.</p>
             </header>
-
-            <Footer/>
+            <main className="my-4 max-w-96 w-full">
+                <section className="grid gap-2">
+                    <div className="adds-card">
+                        <AddsCheckbox/>
+                        <section>
+                            <h3 className="font-medium">Online Service</h3>
+                            <p className="text-xs text-neutral-400">Access to multiplayer games</p>
+                        </section>
+                        <section className="ml-auto mx-3 text-purple-700">
+                            <span className="text-xs"> +$1/mo </span>
+                        </section>
+                    </div>
+                    <div className="adds-card">
+                        <AddsCheckbox/>
+                        <section>
+                            <h3 className="font-medium">Large Storage</h3>
+                            <p className="text-xs text-neutral-400">Extra 1TB of cloud save</p>
+                        </section>
+                        <section className="ml-auto mx-3 text-purple-700">
+                            <span className="text-xs"> +$2/mo </span>
+                        </section>
+                    </div>
+                    <div className="adds-card">
+                        <AddsCheckbox/>
+                        <section>
+                            <h3 className="font-medium">Customizable Profile</h3>
+                            <p className="text-xs text-neutral-400">Custom theme on your profile</p>
+                        </section>
+                        <section className="ml-auto mx-3 text-purple-700">
+                            <span className="text-xs"> +$2/mo </span>
+                        </section>
+                    </div>
+                </section>
+            </main>
+            <div className="w-full h-full hidden sm:flex flex-col-reverse">
+                <Footer/>
+            </div>
         </div>
     );
 }
 
 const Summary = () => {
     return (
-        <div>
+        <div className="flex flex-col w-full h-full items-start xs:items-center sm:items-start">
             <header>
                 <h1 className="form-header">Finishing up</h1>
                 <p className="form-header-p">Double-check everything looks OK before confirming.</p>
             </header>
-            <Footer/>
+            <main></main>
+            <div className="w-full h-full hidden sm:flex flex-col-reverse">
+                <Footer/>
+            </div>
         </div>
     );
 }
 
+const AddsCheckbox = () => {
+    return (
+        <label className="relative flex items-center mx-1 p-3 rounded-full cursor-pointer" htmlFor="ripple-off">
+            <input id="ripple-off" type="checkbox"
+                className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-[4px] border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 
+                before:transition-opacity checked:border-indigo-500 checked:bg-indigo-500 checked:before:bg-gray-900 " />
+            <span
+                className="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor"
+                stroke="currentColor" stroke-width="1">
+                <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+            </span>
+        </label>
+    )
+}
+
+const Period: React.FC<{ onPeriodChange: (isYearly: boolean) => void, isYear: boolean }> = ({ onPeriodChange, isYear }) =>{
+    
+    const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const isYearly:boolean = event.target.checked;
+        console.log(isYearly)
+        onPeriodChange(isYearly)
+    };   
+
+    return (
+        <section className="bg-blue-50 text-neutral-400 bg-opacity-50 mt-10 flex items-center justify-center h-10 text-xs">
+            <p className={`${!isYear ? 'text-cyan-900' : ''}`}>Monthly</p>
+            <label className="relative mx-4 inline-flex cursor-pointer items-center">
+                <input id="switch" 
+                    type="checkbox" 
+                    className="peer sr-only" 
+                    defaultChecked={isYear}
+                    onChange={handleCheckboxChange} 
+                />
+                <label className="hidden"></label>
+                <div className="slide-toggle peer"></div>
+            </label>
+            <p className={`${isYear ? 'text-cyan-900' : ''}`}>Yearly</p>
+        </section>
+    )
+}
+
 const Footer = () => {
     return (
-        <footer className="hidden sm:flex bottom-0 h-20 ">
+        <footer className="hidden sm:flex h-20 max-w-96 w-full">
             <StepperSubmit></StepperSubmit>
         </footer>
     )
