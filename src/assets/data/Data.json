@@ -1,0 +1,36 @@
+{
+    "Prices": {
+        "Plan": {
+            "Arcade": {
+              "monthly": 9,
+              "yearly": 90
+            },
+            "Advance": {
+              "monthly": 12,
+              "yearly": 120
+            },
+            "Pro": {
+              "monthly": 15,
+              "yearly": 150
+            }
+        },
+        "Adds": {
+            "Online Service": {
+                "description" : "Access to multiplayer games.",
+                "monthly": 1,
+                "yearly": 10
+              },
+              "Large Storage": {
+                "description" : "Extra 1TB of cloud save.",
+                "monthly": 2,
+                "yearly": 20
+              },
+              "Customizable Profile": {
+                "description" : "Custom theme on your profile.",
+                "monthly": 2,
+                "yearly": 20
+              }
+        }
+    }
+  }
+  

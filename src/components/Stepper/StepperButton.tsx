@@ -15,18 +15,18 @@ function StepperButton(){
     
     const { tracking, updateTracker } = useContext(TrackerContext);
     
-    const update = (value: number) => {
-        return () => {
-            updateTracker(value)
-        }
-    }
+    // const update = (value: number) => {
+    //     return () => {
+    //         updateTracker(value)
+    //     }
+    // }
 
     return (
         <>
         {steps.map((step) => (
                 <li key={step.number} className="flex text-white mx-2 sm:mx-0 sm:my-4">
                     <div>
-                        <button type="button" className={tracking == step.number ? "circle-list-item-selected" :"circle-list-item" } onClick={update(step.number)}>
+                        <button type="button" className={tracking == step.number ? "circle-list-item-selected" :"circle-list-item"}>
                             <b>{step.number}</b>
                         </button>
                     </div>

@@ -28,9 +28,9 @@ function App() {
               </FormProvider>
             </section>
           </div>
-          <footer className='sm:hidden absolute bottom-0 h-20 bg-white w-full'>
+          {/* <footer className='sm:hidden absolute bottom-0 h-20 bg-white w-full'>
             <StepperSubmit></StepperSubmit>
-          </footer>
+          </footer> */}
         </div>
       </TrackerProvider>
 
