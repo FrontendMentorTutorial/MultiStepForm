@@ -5,7 +5,7 @@ interface TrackerInterface {
     updateTracker: (value: number) => void;
 }
 
-export const TrackerContext = createContext<TrackerInterface>({
+const TrackerContext = createContext<TrackerInterface>({
     tracking: 1,
     updateTracker: () => {}, // Default to a no-op function
 });
