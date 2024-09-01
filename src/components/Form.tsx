@@ -120,10 +120,7 @@ const Plan: React.FC<{ handlePeriodChange: (isYearly: boolean) => void, isYear: 
 
         const planPrices = price[planType];
         const className = planType === 'Pro' ? 'plan-card sm:col-span-2' : 'plan-card sm:col-span-1';
-        const planImage = 
-        planType === 'Arcade' ? ArcadeImage :
-        planType === 'Advance' ? AdvanceImage : ProImage;
-
+        
         return (
             <div 
             className={plan === planType ? `${className} selected`: className}

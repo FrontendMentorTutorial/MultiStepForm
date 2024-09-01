@@ -1,5 +1,5 @@
-import React, { createContext, ReactNode, useContext, useState } from 'react';
-import TrackerContext from './StepTracker';
+import React, { createContext, ReactNode, useState } from 'react';
+// import TrackerContext from './StepTracker';
 import {Prices} from "../assets/data/Data.json";
 
 interface FormInterface {
@@ -23,7 +23,6 @@ export const FormContext = createContext<FormInterface>({
 });
 
 export const FormProvider: React.FC<{children: ReactNode}> = ({children}) => {
-    const {tracking} = useContext(TrackerContext);
     const [formData, setFormData] = useState({
         1: { name: '', email: '', phone: '' },
         2: { type: '',},

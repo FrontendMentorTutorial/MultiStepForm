@@ -2,7 +2,6 @@ import './App.css'
 import NavBar from './NavBar'
 import TopBarImage from '../assets/images/bg-sidebar-mobile.svg';
 import StepperButton from './Stepper/StepperButton';
-import StepperSubmit from './Stepper/StepperSubmit';
 import Form from './Form';
 import { TrackerProvider } from '../context/StepTracker';
 import { FormProvider } from '../context/FormData';

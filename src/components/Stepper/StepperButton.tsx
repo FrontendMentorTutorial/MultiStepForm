@@ -13,13 +13,7 @@ const steps = [
 
 function StepperButton(){
     
-    const { tracking, updateTracker } = useContext(TrackerContext);
-    
-    // const update = (value: number) => {
-    //     return () => {
-    //         updateTracker(value)
-    //     }
-    // }
+    const { tracking } = useContext(TrackerContext);
 
     return (
         <>
